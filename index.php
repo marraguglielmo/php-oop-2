@@ -2,9 +2,10 @@
 
 require_once __DIR__ . '/models/Product.php';
 require_once __DIR__ . '/models/Category.php';
+require_once __DIR__ . '/data/db.php';
 
-$catsCategory = new Category('gatti');
-$prodotto1 = new Product(1, 'cibo per gatti', 'ciboPerGatti1_.jpg', 'Ogni ricetta, preparata con ingredienti di qualità, è una combinazione di due deliziosi gusti, in teneri bocconcini in gelatina. Il tuo gatto potrà assaporare le sue due ricette preferite in un unico, ghiottissimo pasto', 5.00, $catsCategory);
+var_dump($db);
+
 
 ?>
 

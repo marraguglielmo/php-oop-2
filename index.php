@@ -2,10 +2,8 @@
 
 require_once __DIR__ . '/models/Product.php';
 require_once __DIR__ . '/models/Category.php';
+require_once __DIR__ . '/models/Toy.php';
 require_once __DIR__ . '/data/db.php';
-
-// var_dump($db);
-
 
 ?>
 
@@ -31,7 +29,7 @@ require_once __DIR__ . '/data/db.php';
                 <div class="col p-4">
                     <div class="gm_card">
                         <div class="image">
-                            <?php echo "<img src='img/" . $item->image . "'>"; ?>
+                            <?php echo "<img src=' $item->image'>"; ?>
                         </div>
                         <h3>
                             <?php echo $item->name ?>
